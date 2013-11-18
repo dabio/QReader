@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="YSk-x1-Z52">
             <objects>
-                <viewController id="IHl-PT-dhw" sceneMemberID="viewController">
+                <viewController id="IHl-PT-dhw" customClass="DABMainViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KbR-7u-f1b"/>
                         <viewControllerLayoutGuide type="bottom" id="1Du-eV-Pb7"/>
@@ -15,12 +15,50 @@
                     <view key="view" contentMode="scaleToFill" id="O6N-6T-chX">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F2x-Zq-CXC">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hvi-fm-cFa" customClass="DABStartButton">
+                                <rect key="frame" x="20" y="410" width="280" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.48627450980392156" green="0.062745098039215685" blue="0.60392156862745094" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="SRL-Me-mAW"/>
+                                </constraints>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" title="Cancel"/>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="toggleStartCancel:" destination="IHl-PT-dhw" eventType="touchUpInside" id="3N8-pD-FSo"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Hvi-fm-cFa" firstAttribute="leading" secondItem="O6N-6T-chX" secondAttribute="leading" constant="20" id="5ae-IZ-hAI"/>
+                            <constraint firstAttribute="trailing" secondItem="Hvi-fm-cFa" secondAttribute="trailing" constant="20" id="6LB-FW-fxS"/>
+                            <constraint firstItem="1Du-eV-Pb7" firstAttribute="top" secondItem="F2x-Zq-CXC" secondAttribute="bottom" id="6QV-SL-9bh"/>
+                            <constraint firstItem="1Du-eV-Pb7" firstAttribute="top" secondItem="Hvi-fm-cFa" secondAttribute="bottom" constant="20" id="GLj-oK-ghN"/>
+                            <constraint firstItem="F2x-Zq-CXC" firstAttribute="leading" secondItem="O6N-6T-chX" secondAttribute="leading" id="GfC-oh-IVi"/>
+                            <constraint firstAttribute="trailing" secondItem="F2x-Zq-CXC" secondAttribute="trailing" id="dPP-bm-gRp"/>
+                            <constraint firstItem="F2x-Zq-CXC" firstAttribute="top" secondItem="O6N-6T-chX" secondAttribute="top" id="qbg-Vb-1lh"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="scannerView" destination="F2x-Zq-CXC" id="M4m-N4-WAP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h7w-1f-f0Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="495" y="100"/>
+            <point key="canvasLocation" x="185" y="147"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

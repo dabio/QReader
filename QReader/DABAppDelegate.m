@@ -7,6 +7,7 @@
 //
 
 #import "DABAppDelegate.h"
+#import <TestFlight.h>
 
 @implementation DABAppDelegate
 
@@ -17,6 +18,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [TestFlight takeOff:@"68ee7df6-20b0-4d50-9544-9a956213b22e"];
 
     return YES;
 }
