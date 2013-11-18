@@ -1,0 +1,480 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		37CA58F5183A061800CDB570 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37CA58F4183A061800CDB570 /* Foundation.framework */; };
+		37CA58F7183A061800CDB570 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37CA58F6183A061800CDB570 /* CoreGraphics.framework */; };
+		37CA58F9183A061800CDB570 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37CA58F8183A061800CDB570 /* UIKit.framework */; };
+		37CA58FB183A061800CDB570 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37CA58FA183A061800CDB570 /* CoreData.framework */; };
+		37CA5901183A061800CDB570 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 37CA58FF183A061800CDB570 /* InfoPlist.strings */; };
+		37CA5903183A061800CDB570 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 37CA5902183A061800CDB570 /* main.m */; };
+		37CA5907183A061800CDB570 /* DABAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 37CA5906183A061800CDB570 /* DABAppDelegate.m */; };
+		37CA590A183A061800CDB570 /* QReader.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 37CA5908183A061800CDB570 /* QReader.xcdatamodeld */; };
+		37CA590C183A061800CDB570 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37CA590B183A061800CDB570 /* Images.xcassets */; };
+		37CA5913183A061800CDB570 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37CA5912183A061800CDB570 /* XCTest.framework */; };
+		37CA5914183A061800CDB570 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37CA58F4183A061800CDB570 /* Foundation.framework */; };
+		37CA5915183A061800CDB570 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37CA58F8183A061800CDB570 /* UIKit.framework */; };
+		37CA5916183A061800CDB570 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37CA58FA183A061800CDB570 /* CoreData.framework */; };
+		37CA591E183A061800CDB570 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 37CA591C183A061800CDB570 /* InfoPlist.strings */; };
+		37CA5920183A061800CDB570 /* QReaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 37CA591F183A061800CDB570 /* QReaderTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		37CA5917183A061800CDB570 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 37CA58E9183A061800CDB570 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 37CA58F0183A061800CDB570;
+			remoteInfo = QReader;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		37CA58F1183A061800CDB570 /* QReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		37CA58F4183A061800CDB570 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		37CA58F6183A061800CDB570 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		37CA58F8183A061800CDB570 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		37CA58FA183A061800CDB570 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		37CA58FE183A061800CDB570 /* QReader-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "QReader-Info.plist"; sourceTree = "<group>"; };
+		37CA5900183A061800CDB570 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		37CA5902183A061800CDB570 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		37CA5904183A061800CDB570 /* QReader-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QReader-Prefix.pch"; sourceTree = "<group>"; };
+		37CA5905183A061800CDB570 /* DABAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DABAppDelegate.h; sourceTree = "<group>"; };
+		37CA5906183A061800CDB570 /* DABAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DABAppDelegate.m; sourceTree = "<group>"; };
+		37CA5909183A061800CDB570 /* QReader.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = QReader.xcdatamodel; sourceTree = "<group>"; };
+		37CA590B183A061800CDB570 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		37CA5911183A061800CDB570 /* QReaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QReaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		37CA5912183A061800CDB570 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		37CA591B183A061800CDB570 /* QReaderTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "QReaderTests-Info.plist"; sourceTree = "<group>"; };
+		37CA591D183A061800CDB570 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		37CA591F183A061800CDB570 /* QReaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QReaderTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		37CA58EE183A061800CDB570 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37CA58F7183A061800CDB570 /* CoreGraphics.framework in Frameworks */,
+				37CA58FB183A061800CDB570 /* CoreData.framework in Frameworks */,
+				37CA58F9183A061800CDB570 /* UIKit.framework in Frameworks */,
+				37CA58F5183A061800CDB570 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37CA590E183A061800CDB570 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37CA5913183A061800CDB570 /* XCTest.framework in Frameworks */,
+				37CA5916183A061800CDB570 /* CoreData.framework in Frameworks */,
+				37CA5915183A061800CDB570 /* UIKit.framework in Frameworks */,
+				37CA5914183A061800CDB570 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		37CA58E8183A061800CDB570 = {
+			isa = PBXGroup;
+			children = (
+				37CA58FC183A061800CDB570 /* QReader */,
+				37CA5919183A061800CDB570 /* QReaderTests */,
+				37CA58F3183A061800CDB570 /* Frameworks */,
+				37CA58F2183A061800CDB570 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		37CA58F2183A061800CDB570 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				37CA58F1183A061800CDB570 /* QReader.app */,
+				37CA5911183A061800CDB570 /* QReaderTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		37CA58F3183A061800CDB570 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				37CA58F4183A061800CDB570 /* Foundation.framework */,
+				37CA58F6183A061800CDB570 /* CoreGraphics.framework */,
+				37CA58F8183A061800CDB570 /* UIKit.framework */,
+				37CA58FA183A061800CDB570 /* CoreData.framework */,
+				37CA5912183A061800CDB570 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		37CA58FC183A061800CDB570 /* QReader */ = {
+			isa = PBXGroup;
+			children = (
+				37CA5905183A061800CDB570 /* DABAppDelegate.h */,
+				37CA5906183A061800CDB570 /* DABAppDelegate.m */,
+				37CA590B183A061800CDB570 /* Images.xcassets */,
+				37CA5908183A061800CDB570 /* QReader.xcdatamodeld */,
+				37CA58FD183A061800CDB570 /* Supporting Files */,
+			);
+			path = QReader;
+			sourceTree = "<group>";
+		};
+		37CA58FD183A061800CDB570 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				37CA58FE183A061800CDB570 /* QReader-Info.plist */,
+				37CA58FF183A061800CDB570 /* InfoPlist.strings */,
+				37CA5902183A061800CDB570 /* main.m */,
+				37CA5904183A061800CDB570 /* QReader-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		37CA5919183A061800CDB570 /* QReaderTests */ = {
+			isa = PBXGroup;
+			children = (
+				37CA591F183A061800CDB570 /* QReaderTests.m */,
+				37CA591A183A061800CDB570 /* Supporting Files */,
+			);
+			path = QReaderTests;
+			sourceTree = "<group>";
+		};
+		37CA591A183A061800CDB570 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				37CA591B183A061800CDB570 /* QReaderTests-Info.plist */,
+				37CA591C183A061800CDB570 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		37CA58F0183A061800CDB570 /* QReader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37CA5923183A061800CDB570 /* Build configuration list for PBXNativeTarget "QReader" */;
+			buildPhases = (
+				37CA58ED183A061800CDB570 /* Sources */,
+				37CA58EE183A061800CDB570 /* Frameworks */,
+				37CA58EF183A061800CDB570 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QReader;
+			productName = QReader;
+			productReference = 37CA58F1183A061800CDB570 /* QReader.app */;
+			productType = "com.apple.product-type.application";
+		};
+		37CA5910183A061800CDB570 /* QReaderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37CA5926183A061800CDB570 /* Build configuration list for PBXNativeTarget "QReaderTests" */;
+			buildPhases = (
+				37CA590D183A061800CDB570 /* Sources */,
+				37CA590E183A061800CDB570 /* Frameworks */,
+				37CA590F183A061800CDB570 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				37CA5918183A061800CDB570 /* PBXTargetDependency */,
+			);
+			name = QReaderTests;
+			productName = QReaderTests;
+			productReference = 37CA5911183A061800CDB570 /* QReaderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		37CA58E9183A061800CDB570 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = DAB;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Danilo Braband";
+				TargetAttributes = {
+					37CA5910183A061800CDB570 = {
+						TestTargetID = 37CA58F0183A061800CDB570;
+					};
+				};
+			};
+			buildConfigurationList = 37CA58EC183A061800CDB570 /* Build configuration list for PBXProject "QReader" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 37CA58E8183A061800CDB570;
+			productRefGroup = 37CA58F2183A061800CDB570 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				37CA58F0183A061800CDB570 /* QReader */,
+				37CA5910183A061800CDB570 /* QReaderTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		37CA58EF183A061800CDB570 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37CA5901183A061800CDB570 /* InfoPlist.strings in Resources */,
+				37CA590C183A061800CDB570 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37CA590F183A061800CDB570 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37CA591E183A061800CDB570 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		37CA58ED183A061800CDB570 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37CA5907183A061800CDB570 /* DABAppDelegate.m in Sources */,
+				37CA5903183A061800CDB570 /* main.m in Sources */,
+				37CA590A183A061800CDB570 /* QReader.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37CA590D183A061800CDB570 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37CA5920183A061800CDB570 /* QReaderTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		37CA5918183A061800CDB570 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 37CA58F0183A061800CDB570 /* QReader */;
+			targetProxy = 37CA5917183A061800CDB570 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		37CA58FF183A061800CDB570 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				37CA5900183A061800CDB570 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		37CA591C183A061800CDB570 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				37CA591D183A061800CDB570 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		37CA5921183A061800CDB570 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		37CA5922183A061800CDB570 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		37CA5924183A061800CDB570 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QReader/QReader-Prefix.pch";
+				INFOPLIST_FILE = "QReader/QReader-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		37CA5925183A061800CDB570 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QReader/QReader-Prefix.pch";
+				INFOPLIST_FILE = "QReader/QReader-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		37CA5927183A061800CDB570 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/QReader.app/QReader";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QReader/QReader-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "QReaderTests/QReaderTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		37CA5928183A061800CDB570 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/QReader.app/QReader";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QReader/QReader-Prefix.pch";
+				INFOPLIST_FILE = "QReaderTests/QReaderTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		37CA58EC183A061800CDB570 /* Build configuration list for PBXProject "QReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37CA5921183A061800CDB570 /* Debug */,
+				37CA5922183A061800CDB570 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		37CA5923183A061800CDB570 /* Build configuration list for PBXNativeTarget "QReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37CA5924183A061800CDB570 /* Debug */,
+				37CA5925183A061800CDB570 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		37CA5926183A061800CDB570 /* Build configuration list for PBXNativeTarget "QReaderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37CA5927183A061800CDB570 /* Debug */,
+				37CA5928183A061800CDB570 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		37CA5908183A061800CDB570 /* QReader.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				37CA5909183A061800CDB570 /* QReader.xcdatamodel */,
+			);
+			currentVersion = 37CA5909183A061800CDB570 /* QReader.xcdatamodel */;
+			path = QReader.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 37CA58E9183A061800CDB570 /* Project object */;
+}
