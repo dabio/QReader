@@ -37,6 +37,8 @@
     }
 
     self.startButton.selected = YES;
+    [self.scanner start];
+    self.scannerView.hidden = NO;
 }
 
 - (void)stopScanner
@@ -46,7 +48,8 @@
     }
 
     self.startButton.selected = NO;
-
+    [self.scanner stop];
+    self.scannerView.hidden = YES;
 }
 
 - (IBAction)toggleStartCancel:(UIButton *)sender
@@ -67,6 +70,8 @@
     }
 
     NSLog(@"%@", code);
+
+    [self stopScanner];
 }
 
 
