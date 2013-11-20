@@ -12,6 +12,7 @@
 @interface DABMainViewController () <DABScannerDelegate>
 @property (nonatomic, strong) DABScanner *scanner;
 @property (weak, nonatomic) IBOutlet UIView *scannerView;
+@property (weak, nonatomic) IBOutlet UIButton *startButton;
 @end
 
 @implementation DABMainViewController
@@ -35,7 +36,7 @@
         return;
     }
 
-
+    self.startButton.selected = YES;
 }
 
 - (void)stopScanner
@@ -44,12 +45,17 @@
         return;
     }
 
+    self.startButton.selected = NO;
 
 }
 
 - (IBAction)toggleStartCancel:(UIButton *)sender
 {
-    sender.selected = !sender.selected;
+    if ([self.scanner isRunning]) {
+        [self stopScanner];
+    } else {
+        [self startScanner];
+    }
 }
 
 #pragma mark - DABScannerDelegate
