@@ -97,6 +97,7 @@
         return;
     }
 
+    [self.view.layer addSublayer:self.previewLayer];
     [self.session startRunning];
 }
 
@@ -106,6 +107,7 @@
         return;
     }
 
+    [self.previewLayer removeFromSuperlayer];
     [self.session stopRunning];
 }
 

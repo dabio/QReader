@@ -36,8 +36,9 @@
         return;
     }
 
-    self.startButton.selected = YES;
     [self.scanner start];
+
+    self.startButton.selected = YES;
     self.scannerView.hidden = NO;
 }
 
@@ -47,8 +48,9 @@
         return;
     }
 
-    self.startButton.selected = NO;
     [self.scanner stop];
+
+    self.startButton.selected = NO;
     self.scannerView.hidden = YES;
 }
 
